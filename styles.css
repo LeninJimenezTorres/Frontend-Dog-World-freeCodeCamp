@@ -2838,12 +2838,12 @@ nav a {
 }
 
 .pie .developer {
-    font-size: 64%;
+    font-size: 60%;
     margin: auto;
     margin-left: 4%;
     color: white;
     width: 30%;
-    line-height: 200%;
+    line-height: 190%;
 }
 
 .pie .social {
