@@ -472,14 +472,6 @@ nav a {
     padding: 4%;
 }
 
-.buy {
-    display: none;
-    position: absolute;
-    margin: 10% auto auto auto;
-    right: 20%;
-    background: violet;
-}
-
 .p-1 {
     font-weight: bolder;
 }
@@ -2792,6 +2784,42 @@ nav a {
         background-size: contain;
         opacity: 0%;
     }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.form {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.buy {
+    position: inherit;
+    width: 20%;
+    height: auto;
+    margin: 1% auto;
+}
+
+.buy button {
+    background: rgb(255, 132, 0);
+    border-style: solid;
+    border-radius: 2em;
+}
+
+.buy :hover {
+    position: inherit;
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+}
+
+.buy button a {
+    text-decoration: none;
+    color: rgb(0, 60, 90);
+    padding: 2%;
+    font-size: 2vw;
 }
 
 
