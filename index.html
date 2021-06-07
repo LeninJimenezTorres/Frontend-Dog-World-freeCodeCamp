@@ -4,30 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Dog World</title>
 </head>
 
 <body>
+    <div class="fondo">
+    </div>
+    <div class="degradado">
+    </div>
     <div class="big-container">
         <header id="header">
-            <div class="logo">
-                <img id="header-img src=" " alt=" ">
+            <div class="tema">
+                <h1 class="tema-in">DOG WORLD</h1>
             </div>
-            <div class="menu ">
-                <nav id="nav-bar ">
-                    <ul>
-                        <li><a href="# ">FOOD</a></li>
-                        <li><a href="# ">TOYS</a></li>
-                        <li><a href="# ">CLEANLINESS</a></li>
+            <div class="logo">
+                <img id="header-img" alt="" src="./1x/LogoB.jpg">
+                <nav id="nav-bar">
+                    <ul class="lista">
+                        <label>
+                            <li class="items"><a class="no-style" href="#list-food">FOOD</a></li>
+                        </label>
+                        <label>
+                            <li class="items"><a class="no-style" href="#list-sundry">SUNDRY</a></li>
+                        </label>
+                        <label>
+                            <li class="items"><a class="no-style" href="#list-clean">CLEANLINESS</a></li>
+                        </label>
+                        <label>
+                            <li class="items"><a class="no-style" href="#list-ebooks">EBOOKS</a></li>
+                        </label>
                     </ul>
                 </nav>
+                <div class="banda"></div>
+                <div class="degradado-logo"></div>
             </div>
         </header>
-        <div class="container ">
-            <div class="video ">
-                <video id="video " src=" "></video>
-            </div>
+        <div class="portada-degradado"></div>
+        <div class="portada"></div>
+        <div class="temas">
+            <label class="food">
+                <a class="subtitle" href="#list-food">Healthy Food</a>
+                <p class="texto">Choose from the best options</p>
+            </label>
+            <label class="ebooks">
+                <a class="subtitle" href="#list-ebooks">Ebooks</a>
+                <p class="texto">You want learn how they learn?</p>
+            </label>
+            <label class="cleanliness">
+                <a class="subtitle" href="#list-clean">Cleanliness</a>
+                <p class="texto">Toiletries, soap, shampoo, comb and more...</p>
+            </label>
+            <label class="sundry">
+                <a class="subtitle" href="#list-sundry">Sundry</a>
+                <p class="texto">Toys, beds, harness, and more...</p>
+            </label>
+        </div>
+        <div class="container">
             <div class="form ">
                 <form id="form " action="https://www.freecodecamp.com/email-submit) ">
                     <label>
@@ -41,8 +77,156 @@
                     </label>
                 </form>
             </div>
+            <div class="list-food" id="list-food">
+                <label class="title-food">
+                    <p>FOOD</p>
+                </label>
+                <div class="video">
+                    <iframe id="video" src="https://www.youtube.com/embed/-seNBiuXLII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <label class="buy" for="buy">
+                    <button><a href="https://amzn.to/3pAalUU" target="_blank">BUY NOW!!!</a></button>
+                </label>
+                <div class="product-inside">
+                    <div class="producto">
+                        <div class="productoA-F"></div>
+                        <div class="productoB-F"></div>
+                    </div>
+                    <div class="about">
+                        <p class="p-1">About it</p>
+                        <ul>
+                            <li>40 lb. Bag - Purina ONE SmartBlend Natural Chicken & Rice Formula Adult Dry Dog Food</li>
+                            <li>Real chicken is the No.1 ingredient</li>
+                            <li>Dual-defense antioxidant blend to help support a strong immune system</li>
+                            <li>Natural sources of glucosamine help to support healthy joints</li>
+                            <li>Protein-rich, tender, meaty morsels and crunchy kibble for a taste dogs love</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list-sundry" id="list-sundry">
+                <label class="title-sundry">
+                    <p>SUNDRY</p>
+                </label>
+                <div class="video">
+                    <iframe id="video" src="https://www.youtube.com/embed/D2elP5dl_XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <label class="buy" for="buy">
+                    <button><a href="https://amzn.to/3gifSLy" target="_blank">BUY NOW!!!</a></button>
+                </label>
+                <div class="product-inside">
+                    <div class="producto">
+                        <div class="productoA-S"></div>
+                        <div class="productoB-S"></div>
+                    </div>
+                    <div class="about">
+                        <p class="p-1">About it</p>
+                        <ul>
+                            <li>ULTRA BOUNCE BALL: This ball toy for dogs entices play withhigh impact bouncing! Play fetch at the lake or pool thanks to the lightweight, buoyant design. Compatible with Chuckit! ball launcher. </li>
+                            <li>TOUGH & DURABLE: Rubber ball for dogs has a textured surface & a thick rubber core for aggressive chewers yet is soft on dog's mouths.</li>
+                            <li>PET TOYS: Get ready for bonding & fun with your dogs & cats! Check out a variety of our pet toy products such as frisbees, perches & mirrors for birds, prey wand toys for cats, plush toys, light-up interactive toys & more.</li>
+                            <li>CHUCKIT! FETCH TOYS: Chuckit! creates toys that enrich the human-animal bond & bright colors help dogs & puppies stay engaged. Checkout Chuckit! for ball launchers, bouncy balls, frisbees, indoor dog toys, glow toys & more!</li>
+                            <li>JUST FOR PETS: Petmate makes a variety of pet products for dogs, cats, chickens & other small furry friends! Check out our brands such as Aspen Pet, Arm & Hammer, Booda, Chuckit! , Jackson Galaxy & more!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list-clean" id="list-clean">
+                <label class="title-sundry">
+                    <p>CLEANLINESS</p>
+                </label>
+                <div class="video">
+                    <iframe id="video" src="https://www.youtube.com/embed/bOkIc90m76Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <label class="buy" for="buy">
+                    <button><a href="https://amzn.to/3v06Bgr" target="_blank">BUY NOW!!!</a></button>
+                </label>
+                <div class="product-inside">
+                    <div class="producto">
+                        <div class="productoA-C"></div>
+                        <div class="productoB-C"></div>
+                    </div>
+                    <div class="about">
+                        <p class="p-1">About it</p>
+                        <ul>
+                            <li>SIMPLE USE: The convenient fold-down design makes it simple to open and fold, space-saving for storage at home, and easy to store and carry, when outdoors or traveling. Build-in drainage hole adopts drain design, rotate and
+                                open, convenient to drain. The drain cover is well sealed, there is no need to worry about water leakage during use.</li>
+                            <li>DURABLE & HEAVY DUTY: Durable PVC material prevents punctures. The bottom is soft and flexible. Corners sealed well without leak.</li>
+                            <li>SUITABLE SIZE AND NOTE: We provide three sizes for you to choose. We recommend placing the swimming pool on a level surface, without rocks or similar sharp objects under the swimming pool, and trim the dog's nails before using
+                                the swimming pool.</li>
+                            <li>MULTIPLE USES: The pool can be used as a dog bath, outdoor swimming pool, fish pond, toddler bath kids play pool.Let your dogs and children enjoy a wonderful and happy time in summer. </li>
+                            <li>EXCELLENT BATHING TUB & SWIMMING POOL: Throw your dog a water party to enjoy in the summer heat. believe that you will fall in love with it. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="list-ebooks" id="list-ebooks">
+                <label class="title-sundry">
+                    <p>EBOOKS</p>
+                </label>
+                <div class="video">
+                    <iframe id="video" src="https://player.vimeo.com/video/521436064?api=1&title=0&byline=0&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <label class="buy" for="buy">
+                    <button><a href="https://go.hotmart.com/M54864217Y" target="_blank">BUY NOW!!!</a></button>
+                </label>
+                <div class="product-inside">
+                    <div class="producto">
+                        <div class="productoA-C"></div>
+                        <div class="productoB-C"></div>
+                    </div>
+                    <div class="about">
+                        <p class="p-1">About it</p>
+                        <ul>
+                            <li>How to make optimal preparations for their organisms and little processed that they love and feed them at the same time.</li>
+                            <li>Develop canine and feline pastry recipes that were reviewed in their proportions and approved by our nutrition expert veterinarian and that we have also tested in the market for more than 2 years.</li>
+                            <li>Know the different benefits of the ingredients that we will use and that affect the health of our furry ones.</li>
+                            <li>Improve the daily diet of dogs and cats.</li>
+                            <li>Have extensive knowledge about the world of the pet food industry and all that lies behind it.</li>
+                            <li>Read concentrate labels correctly; discovering the unhealthy ingredients that some of them contain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="pie ">
+                    <div class="developer ">
+                        <h3>DEVELOPED BY</h3>
+                        <h4>LENIN JIMENEZ TORRES</h4>
+                        <h5>IT ENGINEER</h5>
+                    </div>
+                    <div class="social ">
+                        <div class="contacts ">
+                            <h2>CONTACT</h2>
+                        </div>
+                        <div class="icons ">
+                            <div class="linkedin ">
+                                <a href="https://www.linkedin.com/in/lenin-jim%C3%A9nez-ba9251134/ " target="_blank ">
+                                    <img class="iconL " src="https://image.flaticon.com/icons/png/512/174/174857.png ">
+                                </a>
+                            </div>
+                            <div class="instagram ">
+                                <a href="https://www.instagram.com/lenin_engineerlife/ " target="_blank ">
+                                    <img class="iconI " src="https://image.flaticon.com/icons/png/512/2111/2111463.png ">
+                                </a>
+                            </div>
+                            <div class="gmail ">
+                                <a href="mailto:jlenin25@hotmail.com ">
+                                    <img class="iconG " src="https://image.flaticon.com/icons/png/512/732/732200.png ">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright ">
+                    <div class="derechos ">
+                        <p>2021 Todos los derechos reservados</p>
+                    </div>
+                </div>
+
+            </footer>
         </div>
-    </div>
 
 </body>
 

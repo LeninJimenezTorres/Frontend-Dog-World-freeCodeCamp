@@ -1,0 +1,2903 @@
+:root {
+    --time: 40s;
+    --opacidad-sub-texto: 0.8;
+    --color-letras: rgba(0, 120, 240, 0.87);
+    --imgA1F: url("https://images-na.ssl-images-amazon.com/images/I/81TKbHmedXL._AC_SL1500_.jpg");
+    --imgA2F: url("https://images-na.ssl-images-amazon.com/images/I/81hAeJW-tmL._AC_SL1500_.jpg");
+    --imgA3F: url("https://images-na.ssl-images-amazon.com/images/I/81guio4VI7L._AC_SL1500_.jpg");
+    --imgA4F: url("https://images-na.ssl-images-amazon.com/images/I/81tdekKrplL._AC_SL1500_.jpg");
+    --imgB1F: url("https://images-na.ssl-images-amazon.com/images/I/91WWHvRcElL._AC_SL1500_.jpg");
+    --imgB2F: url("https://images-na.ssl-images-amazon.com/images/I/914XHxVLiAL._AC_SL1500_.jpg");
+    --imgB3F: url("https://images-na.ssl-images-amazon.com/images/I/71LVuEmzpCL._AC_SL1500_.jpg");
+    --imgB4F: url("https://images-na.ssl-images-amazon.com/images/I/91gUPLtHBIL._AC_SL1500_.jpg");
+    --imgA1S: url("https://images-na.ssl-images-amazon.com/images/I/81an%2BTQ0ouL._AC_SL1500_.jpg");
+    --imgA2S: url("https://images-na.ssl-images-amazon.com/images/I/815huF2n95L._AC_SL1500_.jpg");
+    --imgA3S: url("https://images-na.ssl-images-amazon.com/images/I/41fpZqk1LnL._AC_.jpg");
+    --imgA4S: url("https://images-na.ssl-images-amazon.com/images/I/710fAkTyvUL._AC_SL1500_.jpg");
+    --imgB1S: url("https://images-na.ssl-images-amazon.com/images/I/71irXm8WzWL._AC_SL1500_.jpg");
+    --imgB2S: url("https://images-na.ssl-images-amazon.com/images/I/71O%2BzjXHp4L._AC_SL1500_.jpg");
+    --imgB3S: url("https://images-na.ssl-images-amazon.com/images/I/51uAXF6v-iL._AC_.jpg");
+    --imgB4S: url("https://images-na.ssl-images-amazon.com/images/I/8103GX6K4BL._AC_SL1500_.jpg");
+    --imgA1C: url("https://images-na.ssl-images-amazon.com/images/I/51mKQBmVxUL._AC_SL1001_.jpg");
+    --imgA2C: url("https://images-na.ssl-images-amazon.com/images/I/61k5wusHMNL._AC_SL1001_.jpg");
+    --imgA3C: url("https://images-na.ssl-images-amazon.com/images/I/61oAEWGBnIL._AC_SL1001_.jpg");
+    --imgA4C: url("https://images-na.ssl-images-amazon.com/images/I/716-PcugE1L._AC_SL1001_.jpg");
+    --imgB1C: url("https://images-na.ssl-images-amazon.com/images/I/71M-JzT8lZL._AC_SL1001_.jpg");
+    --imgB2C: url("https://images-na.ssl-images-amazon.com/images/I/71tUK9h8FqL._AC_SL1200_.jpg");
+    --imgB3C: url("https://images-na.ssl-images-amazon.com/images/I/61DDZjhayDL._AC_SL1001_.jpg");
+    --imgB4C: url("https://images-na.ssl-images-amazon.com/images/I/71UY9zohW2L._AC_SL1001_.jpg");
+    --imgA1E: url("https://static-media.hotmart.com/GGogZ09TBp3RAmhTSezCYH_ZUwg=/1024x469/filters:quality(100)/hotmart/checkout_custom/b77e99b5-9dfd-4773-af12-1c3359b5d89f/d28430ld.jpg");
+    --imgA2E: url("https://static-media.hotmart.com/k2m4ebKqztddXrY_vqqx5ETectU=/1024x709/filters:quality(100)/hotmart/checkout_custom/50656d0f-2130-4e30-84a0-02c42aad62f2/pom66tjl.jpg");
+    --imgA3E: url("https://static-media.hotmart.com/xo1WBnqKD_j1viX-ww8HxZpBLPs=/600x600/filters:quality(100)/hotmart/checkout_custom/ac63f670-0242-40c5-991c-6efe0bb68c3c/6yynxei6a.jpg");
+    --imgA4E: url("https://static-media.hotmart.com/gTARW_60Pw-FkHM5lVCLuQbnFeA=/1024x639/filters:quality(100)/hotmart/checkout_custom/4d1a4eff-cf7f-4c7c-ba44-d6f44029a46c/7a278jz5e.jpg");
+    --imgB1E: url("https://cdn.pixabay.com/photo/2015/07/13/20/49/dog-843800_1280.jpg");
+    --imgB2E: url("https://cdn.pixabay.com/photo/2018/06/25/19/34/cherries-3497780_1280.jpg");
+    --imgB3E: url("https://cdn.pixabay.com/photo/2014/10/01/13/40/hot-dog-468401_1280.jpg");
+    --imgB4E: url("https://cdn.pixabay.com/photo/2014/10/01/13/40/hot-dog-468401_1280.jpg");
+    --tiempo: 30s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.big-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: -10;
+}
+
+.fondo {
+    background-image: url(./Galeria/F1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: lightcoral;
+    z-index: -4;
+}
+
+.degradado {
+    background: rgb(109, 0, 139);
+    background: linear-gradient(90deg, rgba(109, 0, 139, 1) 0%, rgba(9, 121, 73, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -3;
+    opacity: 40%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tema {
+    padding-top: 0%;
+}
+
+.tema .tema-in {
+    width: 100%;
+    height: 5vw;
+    text-align: center;
+    font-size: 2.5vw;
+    background-color: rgba(0, 0, 0, 0.829);
+    background: linear-gradient(90deg, rgba(200, 82, 0, var(--opacidad-sub-texto)) 0%, rgba(216, 218, 186, var(--opacidad-sub-texto)) 35%, rgba(0, 212, 255, var(--opacidad-sub-texto)) 100%);
+    top: 0%;
+}
+
+.tema h1 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: rgb(0, 43, 52);
+    text-shadow: 0.02em 0.02em 0.05em rgb(255, 145, 0);
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    width: 27vw;
+    height: auto;
+    top: 35vh;
+    transition-delay: 2s;
+    z-index: 18;
+}
+
+#header-img {
+    width: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 28;
+}
+
+.logo:hover>nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.logo:hover>.banda {
+    visibility: visible;
+    opacity: 1;
+}
+
+.logo:hover>.degradado-logo {
+    visibility: visible;
+    opacity: 40%;
+}
+
+.degradado-logo {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.7s ease-out;
+    z-index: 17;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: rgb(139, 82, 0);
+    background: linear-gradient(90deg, rgba(139, 82, 0, 1) 0%, rgba(216, 218, 186, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.banda {
+    background-color: rgb(0, 33, 43);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.7s ease-out;
+    z-index: 18;
+    border-top-right-radius: 2.5em;
+    border-bottom-right-radius: 2.5em;
+}
+
+nav {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+    z-index: 19;
+    height: auto;
+    width: 50%;
+    padding: 1%;
+    border-top-right-radius: 7em;
+    border-bottom-right-radius: 7em;
+    padding-top: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    z-index: 22;
+}
+
+.items {
+    text-align: center;
+    list-style: none;
+    width: 80%;
+    font-size: 2vw;
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin: 7%;
+    line-height: 100%;
+    z-index: 22;
+}
+
+.no-style {
+    text-align: center;
+    color: rgb(0, 183, 255);
+    z-index: 22;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.portada-degradado {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 88vh;
+    background-color: rgb(20, 119, 169);
+    opacity: 15%;
+}
+
+.portada {
+    z-index: -2;
+    width: 100%;
+    height: 88vh;
+    background-image: url(./Galeria/im1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: portad;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.texto {
+    width: 40%;
+    height: auto;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0.05em 0.05em 0.05em black;
+    padding: 5%;
+    margin-top: 1%;
+    z-index: 10;
+    color: white;
+    background: rgb(139, 82, 0);
+    background: linear-gradient(90deg, rgba(200, 82, 0, var(--opacidad-sub-texto)) 0%, rgba(216, 218, 186, var(--opacidad-sub-texto)) 35%, rgba(0, 212, 255, var(--opacidad-sub-texto)) 100%);
+}
+
+.subtitle {
+    height: auto;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 0.05em 0.05em 0.07em black;
+    z-index: 10;
+}
+
+.temas {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    z-index: 0;
+    top: 35vh;
+}
+
+.temas a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    border-style: solid;
+    border-color: white;
+    border-width: 1%;
+    margin: 2%;
+    background: linear-gradient(90deg, rgba(200, 82, 0, var(--opacidad-sub-texto)) 0%, rgba(216, 218, 186, var(--opacidad-sub-texto)) 35%, rgba(0, 212, 255, var(--opacidad-sub-texto)) 100%);
+    right: 0;
+}
+
+.temas p {
+    position: absolute;
+    right: 0;
+    font-size: 2vw;
+    margin-top: 10%;
+    width: 30%;
+}
+
+.food {
+    animation-name: text-food;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: hidden;
+}
+
+.ebooks {
+    animation-name: text-ebooks;
+    animation-duration: var(--time);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: hidden;
+}
+
+.cleanliness {
+    animation-name: text-clean;
+    animation-duration: var(--time);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: hidden;
+}
+
+.sundry {
+    animation-name: text-sundry;
+    animation-duration: var(--time);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    visibility: hidden;
+}
+
+@keyframes text-food {
+    0% {
+        visibility: visible;
+    }
+    12% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    92% {
+        visibility: hidden;
+    }
+    95% {
+        visibility: visible;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes text-ebooks {
+    0% {
+        visibility: hidden;
+    }
+    14% {
+        visibility: hidden;
+    }
+    15% {
+        visibility: visible;
+    }
+    35% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes text-clean {
+    0% {
+        visibility: hidden;
+    }
+    42% {
+        visibility: hidden;
+    }
+    43% {
+        visibility: visible;
+    }
+    62% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes text-sundry {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    63% {
+        visibility: hidden;
+    }
+    65% {
+        visibility: visible;
+    }
+    80% {
+        visibility: visible;
+    }
+    85% {
+        visibility: hidden;
+    }
+}
+
+@keyframes portad {
+    0% {
+        background-image: url(./Galeria/im1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25% {
+        background-image: url(./Galeria/im2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50% {
+        background-image: url(./Galeria/im3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75% {
+        background-image: url(./Galeria/im4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.list-food {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.product-inside {
+    display: flex;
+    width: 90%;
+    margin-left: 2.7%;
+    height: auto;
+    padding: 2%;
+    background: white;
+    z-index: -1;
+}
+
+.title-food {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--color-letras);
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 2%;
+}
+
+.video #video {
+    position: inherit;
+    width: 100%;
+    height: 70vh;
+    top: -50%;
+    padding: 0%;
+    z-index: 2;
+}
+
+.producto {
+    width: 70%;
+    height: 80vh;
+}
+
+.about {
+    text-align: justify;
+    width: 20%;
+}
+
+.about ul {
+    font-size: 1.2em;
+    padding: 4%;
+}
+
+.buy {
+    display: none;
+    position: absolute;
+    margin: 10% auto auto auto;
+    right: 20%;
+    background: violet;
+}
+
+.p-1 {
+    font-weight: bolder;
+}
+
+.productoA-F {
+    width: 60%;
+    height: 60vh;
+    margin: 0 5%;
+    left: 0;
+    animation-name: fondos-AF;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    z-index: 0;
+    position: absolute;
+}
+
+.productoB-F {
+    margin: 0 5%;
+    width: 60%;
+    height: 60vh;
+    left: 0;
+    animation-name: fondos-BF;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes fondos-AF {
+    0% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.69% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.7% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    5.9% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    6.1% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    6.3% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    6.5% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    6.7% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    17.7% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    17.9% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    18.1% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    18.3% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    18.5% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    18.7% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    18.9% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.79% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.8% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    31.0% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    31.2% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    31.4% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    31.6% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    31.8% {
+        background-image: var(--imgA2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    42.7% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    42.9% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    43.1% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    43.3% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    43.5% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    43.7% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    43.9% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.001% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.01% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    56.2% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    56.4% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    56.6% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    56.8% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    57.001% {
+        background-image: var(--imgA3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    67.1% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    67.2% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    67.4% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    67.6% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    67.8% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    67.95% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    68.1% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.2% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.3% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    81.5% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    81.7% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    81.9% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    82.1% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    82.3% {
+        background-image: var(--imgA4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    92.2% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    92.4% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    92.6% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    92.8% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    93.0% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    93.2% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    93.4% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    100% {
+        background-image: var(--imgA1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+}
+
+@keyframes fondos-BF {
+    0%,
+    8% {
+        background-image: var(--imgB1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    9% {
+        background-image: var(--imgB1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    11% {
+        background-image: var(--imgB1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    15% {
+        background-image: var(--imgB1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    16% {
+        background-image: var(--imgB1F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    32% {
+        background-image: var(--imgB2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    33% {
+        background-image: var(--imgB2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    40% {
+        background-image: var(--imgB2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    41% {
+        background-image: var(--imgB2F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    57% {
+        background-image: var(--imgB3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    58% {
+        background-image: var(--imgB3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    65% {
+        background-image: var(--imgB3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    66% {
+        background-image: var(--imgB3F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    81% {
+        background-image: var(--imgB4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    82% {
+        background-image: var(--imgB4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    95% {
+        background-image: var(--imgB4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    96% {
+        background-image: var(--imgB4F);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.list-sundry {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.title-sundry {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--color-letras);
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 2%;
+}
+
+.productoA-S {
+    width: 60%;
+    height: 60vh;
+    margin: 0 5%;
+    left: 0;
+    animation-name: fondos-AS;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    z-index: 0;
+    position: absolute;
+}
+
+.productoB-S {
+    margin: 5% 5%;
+    width: 60%;
+    height: 60vh;
+    left: 0;
+    animation-name: fondos-BS;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes fondos-AS {
+    0% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.69% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.7% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    5.9% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    6.1% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    6.3% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    6.5% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    6.7% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    17.7% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    17.9% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    18.1% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    18.3% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    18.5% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    18.7% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    18.9% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.79% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.8% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    31.0% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    31.2% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    31.4% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    31.6% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    31.8% {
+        background-image: var(--imgA2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    42.7% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    42.9% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    43.1% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    43.3% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    43.5% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    43.7% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    43.9% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.001% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.01% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    56.2% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    56.4% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    56.6% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    56.8% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    57.001% {
+        background-image: var(--imgA3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    67.1% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    67.2% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    67.4% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    67.6% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    67.8% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    67.95% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    68.1% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.2% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.3% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    81.5% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    81.7% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    81.9% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    82.1% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    82.3% {
+        background-image: var(--imgA4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    92.2% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    92.4% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    92.6% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    92.8% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    93.0% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    93.2% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    93.4% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    100% {
+        background-image: var(--imgA1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+}
+
+@keyframes fondos-BS {
+    0%,
+    8% {
+        background-image: var(--imgB1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    9% {
+        background-image: var(--imgB1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    11% {
+        background-image: var(--imgB1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    15% {
+        background-image: var(--imgB1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    16% {
+        background-image: var(--imgB1S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    32% {
+        background-image: var(--imgB2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    33% {
+        background-image: var(--imgB2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    40% {
+        background-image: var(--imgB2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    41% {
+        background-image: var(--imgB2S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    57% {
+        background-image: var(--imgB3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    58% {
+        background-image: var(--imgB3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    65% {
+        background-image: var(--imgB3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    66% {
+        background-image: var(--imgB3S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    81% {
+        background-image: var(--imgB4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    82% {
+        background-image: var(--imgB4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    95% {
+        background-image: var(--imgB4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    96% {
+        background-image: var(--imgB4S);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.list-clean {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.title-clean {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--color-letras);
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 2%;
+}
+
+.productoA-C {
+    width: 60%;
+    height: 60vh;
+    margin: 0 5%;
+    left: 0;
+    animation-name: fondos-AC;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    z-index: 0;
+    position: absolute;
+}
+
+.productoB-C {
+    margin: 5% 5%;
+    width: 60%;
+    height: 60vh;
+    left: 0;
+    animation-name: fondos-BC;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes fondos-AC {
+    0% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.69% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.7% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    5.9% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    6.1% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    6.3% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    6.5% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    6.7% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    17.7% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    17.9% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    18.1% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    18.3% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    18.5% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    18.7% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    18.9% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.79% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.8% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    31.0% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    31.2% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    31.4% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    31.6% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    31.8% {
+        background-image: var(--imgA2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    42.7% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    42.9% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    43.1% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    43.3% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    43.5% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    43.7% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    43.9% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.001% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.01% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    56.2% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    56.4% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    56.6% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    56.8% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    57.001% {
+        background-image: var(--imgA3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    67.1% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    67.2% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    67.4% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    67.6% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    67.8% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    67.95% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    68.1% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.2% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.3% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    81.5% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    81.7% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    81.9% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    82.1% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    82.3% {
+        background-image: var(--imgA4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    92.2% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    92.4% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    92.6% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    92.8% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    93.0% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    93.2% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    93.4% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    100% {
+        background-image: var(--imgA1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+}
+
+@keyframes fondos-BC {
+    0%,
+    8% {
+        background-image: var(--imgB1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    9% {
+        background-image: var(--imgB1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    11% {
+        background-image: var(--imgB1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    15% {
+        background-image: var(--imgB1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    16% {
+        background-image: var(--imgB1C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    32% {
+        background-image: var(--imgB2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    33% {
+        background-image: var(--imgB2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    40% {
+        background-image: var(--imgB2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    41% {
+        background-image: var(--imgB2C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    57% {
+        background-image: var(--imgB3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    58% {
+        background-image: var(--imgB3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    65% {
+        background-image: var(--imgB3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    66% {
+        background-image: var(--imgB3C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    81% {
+        background-image: var(--imgB4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    82% {
+        background-image: var(--imgB4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    95% {
+        background-image: var(--imgB4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    96% {
+        background-image: var(--imgB4C);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.list-ebooks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.title-ebooks {
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: var(--color-letras);
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding-top: 2%;
+}
+
+.productoA-E {
+    width: 60%;
+    height: 60vh;
+    margin: 0 5%;
+    left: 0;
+    animation-name: fondos-AE;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    z-index: 0;
+    position: absolute;
+}
+
+.productoB-E {
+    margin: 5% 5%;
+    width: 60%;
+    height: 60vh;
+    left: 0;
+    animation-name: fondos-BE;
+    animation-duration: var(--tiempo);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+    position: absolute;
+}
+
+@keyframes fondos-AE {
+    0% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.69% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    5.7% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    5.9% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    6.1% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    6.3% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    6.5% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    6.7% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    17.7% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    17.9% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    18.1% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    18.3% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    18.5% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    18.7% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    18.9% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.79% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    30.8% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    31.0% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    31.2% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    31.4% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    31.6% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    31.8% {
+        background-image: var(--imgA2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*----------------*/
+    42.7% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    42.9% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    43.1% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    43.3% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    43.5% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    43.7% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    43.9% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.001% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    56.01% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    56.2% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    56.4% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    56.6% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    56.8% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    57.001% {
+        background-image: var(--imgA3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    67.1% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    67.2% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    67.4% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    67.6% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    67.8% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    67.95% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    68.1% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.2% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    81.3% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    81.5% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    81.7% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    81.9% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    82.1% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    82.3% {
+        background-image: var(--imgA4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    /*-------------*/
+    92.2% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    92.4% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 10%;
+    }
+    92.6% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 30%;
+    }
+    92.8% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 50%;
+    }
+    93.0% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 70%;
+    }
+    93.2% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 90%;
+    }
+    93.4% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    100% {
+        background-image: var(--imgA1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+}
+
+@keyframes fondos-BE {
+    0%,
+    8% {
+        background-image: var(--imgB1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    9% {
+        background-image: var(--imgB1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    11% {
+        background-image: var(--imgB1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    15% {
+        background-image: var(--imgB1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    16% {
+        background-image: var(--imgB1E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    32% {
+        background-image: var(--imgB2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    33% {
+        background-image: var(--imgB2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    40% {
+        background-image: var(--imgB2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    41% {
+        background-image: var(--imgB2E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    57% {
+        background-image: var(--imgB3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    58% {
+        background-image: var(--imgB3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    65% {
+        background-image: var(--imgB3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    66% {
+        background-image: var(--imgB3E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    81% {
+        background-image: var(--imgB4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+    82% {
+        background-image: var(--imgB4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    95% {
+        background-image: var(--imgB4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 100%;
+    }
+    96% {
+        background-image: var(--imgB4E);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0%;
+    }
+}
+
+
+/*------------------------------------------------------------------------*/
+
+.pie {
+    background: rgb(0, 27, 37);
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    bottom: 2%;
+    /*min-height: 2em;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.pie .developer {
+    font-size: 64%;
+    margin: auto;
+    margin-left: 4%;
+    color: white;
+    width: 30%;
+    line-height: 200%;
+}
+
+.pie .social {
+    text-align: center;
+    margin: 0.5% auto;
+    width: 33%;
+}
+
+.pie .social .contacts {
+    color: rgb(255, 255, 255);
+    font-size: 25%;
+    /* margin: auto auto auto 25%; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.pie .social .icons {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+footer .copyright {
+    position: fixed;
+    width: 100vw;
+    height: 4%;
+    /*min-height: 1em;*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: rgb(0, 27, 37);
+    bottom: 0%;
+    font-family: 'Lato', sans-serif;
+}
+
+footer .copyright .derechos {
+    color: white;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-size: 70%;
+}
+
+.pie .social .icons .iconL {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    align-items: center;
+}
+
+.pie .social .icons .iconL:hover {
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    align-items: center;
+}
+
+.pie .social .icons .iconI {
+    width: 20%;
+    height: 20%;
+    margin: 0;
+    align-items: center;
+}
+
+.pie .social .icons .iconI:hover {
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    align-items: center;
+}
+
+.pie .social .icons .iconG {
+    width: 24%;
+    height: 24%;
+    margin: 0;
+    align-items: center;
+}
+
+.pie .social .icons .iconG:hover {
+    width: 28%;
+    height: 28%;
+    margin: 0;
+    align-items: center;
+}
